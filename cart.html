@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Register - Fishing Shop</title>
+    <title>Your Cart - Fishing Shop</title>
 </head>
 <body>
     <header>
-        <h1>Create an Account</h1>
+        <h1>Your Cart</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,20 +21,15 @@
         </nav>
     </header>
     <main>
-        <form id="register-form">
-            <label for="new-username">Username:</label>
-            <input type="text" id="new-username" required>
-            <label for="new-password">Password:</label>
-            <input type="password" id="new-password" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
-            <button type="submit">Register</button>
-        </form>
+        <h2>Items in Your Cart</h2>
+        <div id="cart-items"></div>
+        <h3>Total: $<span id="total-price">0</span></h3>
+        <button id="checkout">Checkout</button>
     </main>
     <footer>
         <p>&copy; 2023 Fishing Shop</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="cart.js"></script>
     <img src="logo.png" alt="Logo" class="fixed-logo">
 </body>
 </html>
